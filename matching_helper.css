@@ -1,0 +1,60 @@
+body {
+  background-image: url('img/background.png');
+  background-repeat: repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#gameWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  width: 135px;
+  height: 210px;
+  background: white;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 70px);
+  overflow: hidden;
+  position: relative; 
+}
+
+.miniCard {
+  width: 45px;
+  height: 70px;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-size: cover;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.fullSize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 210px;
+  z-index: 10;
+  background-size: cover;
+}
